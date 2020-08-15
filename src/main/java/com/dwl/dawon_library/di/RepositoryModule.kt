@@ -22,7 +22,6 @@ abstract class DataSourceModule {
 @Module
 @InstallIn(ApplicationComponent::class)
 abstract class RepositoryModule {
-
     @Singleton
     @Binds
     abstract fun bindRepository(repository: RepositoryImpl): Repository
